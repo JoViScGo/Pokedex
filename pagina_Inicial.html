@@ -16,7 +16,7 @@
         background-color: brown;
       }
       body{
-            background-color: lightgray;
+            background-color: gray;
             align-items: center;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +42,28 @@
           font-size: 400%;
           font-weight: bolder;
         }
-        .bold{
-          font-weight: bolder;
-        }
-        body{
-          background-color: gray;
-        }
+        .bold{font-weight: bolder;}
+
+
+        .normal { color: rgb(255, 255, 255); }
+        .fogo { color: red; }
+        .agua { color: blue; }
+        .eletrico { color: yellow; }
+        .grama { color: green; }
+        .gelo { color: lightblue; }
+        .lutador { color: orange; }
+        .venenoso { color: purple; }
+        .terra { color: brown; }
+        .voador { color: skyblue; }
+        .psiquico { color: pink; }
+        .inseto { color: green; }
+        .pedra { color: darkgray; }
+        .fantasma { color: darkpurple; }
+        .dragao { color: darkblue; }
+        .sombrio { color: black; }
+        .aco { color: silver; }
+        .fada { color: lightpink; }
+/* https://pokemondb.net/pokedex/game/x-y#dex-central-kalos */
     </style>
 </head>
 
@@ -75,7 +91,7 @@
         <div class="row ">
             <div class="col-sm-4 cinza maior">
                 <h1 class="textomaior">Ash Ketchum</h1>
-                <img class="arredondada" src="https://th.bing.com/th/id/OIP.qlAhseMXM_nPWZNHZNprgwHaHa?rs=1&pid=ImgDetMain" alt="Foto Ash">
+                <img class="arredondada" src="src/ash.png" alt="Foto Ash">
                 <h4><span style="font-weight: bolder;">Pokemons coletados: </span>153</h4>
                 <h4><span style="font-weight: bolder;">Progresso: </span>100%</h4>
             </div>
@@ -84,24 +100,24 @@
 
               <h1><SPan style="font-weight: bolder; font-size: larger;">POKEMONS CAPTURADOS POR TIPO</SPan></h1>  
 
-              <h3><span style="font-weight: bolder; font-size: larger;">Normal </span>7</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Fogo </span>7</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Água </span>6</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Elétrico </span>3</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Grama </span>7</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Gelo </span>4</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Lutador </span>3</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Venenoso </span>2</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Terra </span>3</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Voador </span>5</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Psíquico </span>2</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Inseto </span>3</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Pedra </span>4</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Fantasma </span>4</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Dragão </span>6</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Sombrio </span>4</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Aço </span>3</h3>
-              <h3><span style="font-weight: bolder; font-size: larger;">Fada </span>9</h3>  
+              <h3><span style="font-weight: bolder; font-size: large;" class="normal">Normal </span>7</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="fogo">Fogo </span>7</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="agua">Água </span>6</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="eletrico">Elétrico </span>3</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="grama">Grama </span>7</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="gelo">Gelo </span>4</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="lutador">Lutador </span>3</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="venenoso">Venenoso </span>2</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="terra">Terra </span>3</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="voador">Voador </span>5</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="psiquico">Psíquico </span>2</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="inseto">Inseto </span>3</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="pedra">Pedra </span>4</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="fantasma">Fantasma </span>4</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="dragao">Dragão </span>6</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="sombrio">Sombrio </span>4</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="aco">Aço </span>3</h3>
+              <h3><span style="font-weight: bolder; font-size: large;" class="fada">Fada </span>9</h3>  
 
             </div>
         </div>
