@@ -14,6 +14,7 @@
       }
       .brownaside{
         background-color: brown;
+        min-height: 2vh;
       }
       body{
             background-color: gray;
@@ -43,6 +44,8 @@
           font-weight: bolder;
         }
         .bold{font-weight: bolder;}
+
+
         .normal { color: rgb(255, 255, 255); }
         .fogo { color: red; }
         .agua { color: blue; }
@@ -61,59 +64,51 @@
         .sombrio { color: black; }
         .aco { color: silver; }
         .fada { color: lightpink; }
-        .centralizar{      
-          background-color: red;
-        }
-        .back{
-          background-color: cadetblue;
-        }
-        /* .tamanho1{
-          min-width: 25vw;
-        } */
-        .tamanho2{
-          min-width: 100%; 
-        }
-        /* .flex{
-          display: flex;
-        }  */
+/* https://pokemondb.net/pokedex/game/x-y#dex-central-kalos */
     </style>
 </head>
 
 <body>
-  <div class="container telatoda">
-    <div class="row">
-        <div class="col-sm-12 brownaside">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pagina_Inicial.html">Página Inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pokedex.html">Pokedex</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="info.html">Treinador</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cadastro.html">Cadastrar</a>
-            </li>
-          </ul>
-        </div>
-      
-      <div class="row">
-        <div class="col-sm-6 centralizar tamanho1">
-          <h1 class="textomaior">Ash Ketchum</h1>
-          <img class="arredondada" src="src/ash.png" alt="Foto Ash">
-          <h4><span style="font-weight: bolder;">Pokemons coletados: </span>153</h4>
-          <h4><span style="font-weight: bolder;">Progresso: </span>100%</h4>
+      <div class="container telatoda">
+        <div class="row">
+            <div class="col-sm-12 brownaside">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina_Inicial.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="treinador.html">Treinador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pokedex.html">Pokedex</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cadastro.html">Cadastrar</a>
+                </li>
+              </ul>
+            </div>
         </div>
 
-        <div class="col-sm-6 inseto tamanho2 back">
-          <h1>INFORMAÇÕES</h1>
+        <div class="row ">
+            <div class="col-sm-4 cinza maior">
+                <h1 class="textomaior">Ash Ketchum</h1>
+                <img class="arredondada" src="src/ash.png" alt="Foto Ash">
+                <h4><span style="font-weight: bolder;">Pokemons coletados: </span>153</h4>
+                <h4><span style="font-weight: bolder;">Progresso: </span>100%</h4>
+            </div>
 
+            <div class="col-sm-8 cinza maior">
+
+              <h1><SPan style="font-weight: bolder; font-size: larger;">INFORMAÇÕES</SPan></h1>  
+
+              <h3 class="bold"><span style="font-weight: bolder; font-size: larger;" class="normal">IDADE: </span>10</h3>
+              <h3 class="bold"><span style="font-weight: bolder; font-size: larger;" class="normal">LOCAL DE NASCIMENTO:  </span>Pallet</h3>
+              <h3 class="bold"><span style="font-weight: bolder; font-size: larger;" class="normal">REGIÃO DE NASCIMENTO: </span>Kanto</h3>
+
+            </div>
         </div>
-      </div>
-
     </div>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
