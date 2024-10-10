@@ -73,22 +73,22 @@
         <div class="col-sm-12 brownaside">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="pagina_Inicial.html">Página Inicial</a>
+              <a class="nav-link active" aria-current="page" href="pagina_Inicial.php">Página Inicial</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="treinador.html">Treinador</a>
+              <a class="nav-link" href="treinador.php">Treinador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pokedex.html">Pokedex</a>
+              <a class="nav-link" href="pokedex.php">Pokedex</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cadastro.html">Cadastrar</a>
+              <a class="nav-link" href="cadastro.php">Cadastrar</a>
             </li>
           </ul>
         </div>
     </div>
 
-    <div class="row vertical">
+    <!-- <div class="row vertical">
       <h1 class="textomaior">Cadastro de pokemons</h1>
       <h2>Esta página tem por objetivo cadastrar novos pokemons encontrados durante a sua jornada.</h2>
       <div>
@@ -110,7 +110,46 @@
         <button class="btn btn-danger bold color" type="button" onClick="window.location.reload();">Salvar</button>
       </div>
 
+    </div> -->
+
+    <div class="row vertical">
+      <form method = "post">
+        <label for="nome"><h1 class="textomaior">Cadastrar Novo Pokemon</h1></label><br>
+        <div class="input-group mb-3">
+          <span class="input-group-text color" id="basic-addon1">NOME</span>
+          <input type="text" class="form-control color2" id = "nome" name = "nome"><br>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text color" id="basic-addon1">TIPO</span>
+          <input type="text" class="form-control color2" id = "tipo" name = "tipo"><br>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text color" id="basic-addon1">TAMANHO</span>          
+          <input type="text" class="form-control color2" id = "tamanho" name = "tamanho"><br>
+        </div>
+
+        <button class="btn btn-danger bold color" type="submit" value="salvar">Salvar</button>
+        <!-- <input type="submit" value="Enviar"> -->
+      </form>
     </div>
+
+    <?php
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+      $nome = htmlspecialchars($_POST["nome"]);
+      $tipo = htmlspecialchars($_POST["tipo"]);
+      $tamanho = htmlspecialchars($_POST["tamanho"]);
+
+    }
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+      echo "<h4>Nome do pokemon cadastrado: $nome</h4>";
+      echo "<h4>Tipo do pokemon cadastrado: $tipo</h4>";
+      echo "<h4>Tamanho do pokemon cadastrado: $tamanho</h4>";
+    }
+    
+    ?>
+
   </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

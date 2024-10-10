@@ -74,16 +74,16 @@
             <div class="col-sm-12 brownaside">
               <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="pagina_Inicial.html">Página Inicial</a>
+                  <a class="nav-link active" aria-current="page" href="pagina_Inicial.php">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="treinador.html">Treinador</a>
+                  <a class="nav-link" href="treinador.php">Treinador</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pokedex.html">Pokedex</a>
+                  <a class="nav-link" href="pokedex.php">Pokedex</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="cadastro.html">Cadastrar</a>
+                  <a class="nav-link" href="cadastro.php">Cadastrar</a>
                 </li>
               </ul>
             </div>
